@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#perhitungan .container {
+  width: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #ffffff;
+}
+
+#nav,
+#home-hitung,
+#hasil {
+  background-color: #b1e3ff;
+}
+
+.collapse {
+  position: relative;
+  top: 10px;
+  font-size: 17px;
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Jarak garis bawah dari teks */
+  left: 0;
+  width: 0;
+  height: 2px; /* Ketebalan garis bawah */
+  background-color: #007bff; /* Warna garis bawah */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Panjang garis bawah saat hover */
+}
+
+.footer {
+  overflow-x: hidden;
+}
+
+/*home*/
+#home {
+  position: relative;
+}
+
+/* media query */
+@media (max-width: 768px) {
+  #home .container {
+    width: 80%;
+  }
+}
